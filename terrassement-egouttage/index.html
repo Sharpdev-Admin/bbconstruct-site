@@ -3,71 +3,74 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>document.documentElement.classList.add("js");document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".nav-toggle");if(!b||window.BB_READY)return;var n=document.getElementById("nav"),o=b.getAttribute("aria-expanded")!=="true";b.setAttribute("aria-expanded",String(o));n.classList.toggle("is-open",o);});document.addEventListener("keydown",function(e){if(e.key!=="Escape"||window.BB_READY)return;var b=document.querySelector(".nav-toggle"),n=document.getElementById("nav");if(n&&n.classList.contains("is-open")){n.classList.remove("is-open");b.setAttribute("aria-expanded","false");b.focus();}});document.addEventListener("DOMContentLoaded",function(){if(!window.BB_READY)document.documentElement.classList.remove("js");});</script>
+  <script>document.documentElement.classList.add("js");(function(){var d=document,q=[],out=[],held=0,io,each=function(s,f){[].forEach.call(d.querySelectorAll(s),f);},rel=function(i){if(!i.dataset.src)return;var p=i.parentNode;i.__bb={b:i.getAttribute("src"),s:i.dataset.src,ss:i.dataset.srcset};if(p&&p.tagName==="PICTURE")[].forEach.call(p.querySelectorAll("source[data-srcset]"),function(s){s.__ss=s.dataset.srcset;s.srcset=s.dataset.srcset;s.removeAttribute("data-srcset");});if(i.dataset.srcset)i.srcset=i.dataset.srcset;i.src=i.dataset.src;i.removeAttribute("data-srcset");i.removeAttribute("data-src");out.push(i);},back=function(i){var r=i.__bb,p=i.parentNode;if(p&&p.tagName==="PICTURE")[].forEach.call(p.querySelectorAll("source"),function(s){if(s.__ss){s.removeAttribute("srcset");s.dataset.srcset=s.__ss;}});i.removeAttribute("srcset");if(r.ss)i.dataset.srcset=r.ss;i.dataset.src=r.s;i.src=r.b;q.push(i);},all=function(){go.done=1;if(io)io.disconnect();q.splice(0).forEach(rel);each("img[data-src]",rel);},go=function(){if(go.done)return;go.done=1;if(!window.IntersectionObserver)return all();var c=navigator.connection,m=c&&c.saveData?0:innerWidth<=700?600:1250;io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;io.unobserve(e.target);if(held)q.push(e.target);else rel(e.target);});},{rootMargin:m+"px 0px"});each("img[data-src]",function(i){io.observe(i);});};window.BB_RELEASE=all;window.BB_HOLD=function(on,keep){held=on;if(!on)return q.splice(0).forEach(rel);out.splice(0).forEach(function(i){if(i!==keep&&!i.complete)back(i);else out.push(i);});};addEventListener("beforeprint",all);addEventListener("load",go);d.addEventListener("DOMContentLoaded",function(){var p=d.querySelector("img[data-lcp]");if(!p||p.complete)return go();p.addEventListener("load",go);p.addEventListener("error",go);});})();document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".nav-toggle");if(!b||window.BB_READY)return;var n=document.getElementById("nav"),o=b.getAttribute("aria-expanded")!=="true";b.setAttribute("aria-expanded",String(o));n.classList.toggle("is-open",o);});document.addEventListener("keydown",function(e){if(e.key!=="Escape"||window.BB_READY)return;var b=document.querySelector(".nav-toggle"),n=document.getElementById("nav");if(n&&n.classList.contains("is-open")){n.classList.remove("is-open");b.setAttribute("aria-expanded","false");b.focus();}});document.addEventListener("DOMContentLoaded",function(){if(!window.BB_READY){document.documentElement.classList.remove("js");window.BB_RELEASE();}});</script>
     <meta name="robots" content="noindex, nofollow">
-  <script src="../assets/js/main.76ecef2493.js" defer onerror="document.documentElement.classList.remove('js')"></script>
-  <title>Terrassement et égouttage à Villers-la-Ville, Sombreffe | BBconstruct</title>
-  <meta name="description" content="Déblais, coffre, empierrement et lit de pose sous une terrasse ou un parking, travaux de béton, égouttage privatif. Appelez Benjamin : 0471 41 01 84.">
-  <link rel="canonical" href="https://bbconstruct.site/terrassement-egouttage/">
+  <script src="../assets/js/main.690381d975.js" defer onerror="document.documentElement.classList.remove('js');window.BB_RELEASE()"></script>
+  <title>Terrassement & égouttage à Villers-la-Ville, Sombreffe | BBconstruct</title>
+  <meta name="description" content="Déblais, coffre, empierrement et lit de pose sous terrasse, allée ou parking, égouttage privatif. 15 ans d'expérience : appelez Benjamin, 0471 41 01 84.">
+  <link rel="canonical" href="https://www.bbconstruct.site/terrassement-egouttage/">
   <meta name="theme-color" content="#121214">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_BE">
   <meta property="og:site_name" content="BBconstruct">
-  <meta property="og:title" content="Terrassement et égouttage — BBconstruct, Villers-la-Ville et Sombreffe">
-  <meta property="og:description" content="Préparation du sol, béton et égouttage privatif autour d'une maison ou d'un bâtiment, par Benjamin Bricmant.">
-  <meta property="og:url" content="https://bbconstruct.site/terrassement-egouttage/">
-  <meta property="og:image" content="https://bbconstruct.site/assets/brand/og-image.jpg?v=dc2551ad9c">
+  <meta property="og:title" content="Terrassement & égouttage — BBconstruct, Villers-la-Ville et Sombreffe">
+  <meta property="og:description" content="Préparation du sol et égouttage privatif autour d'une maison ou d'un bâtiment, par Benjamin Bricmant.">
+  <meta property="og:url" content="https://www.bbconstruct.site/terrassement-egouttage/">
+  <meta property="og:image" content="https://www.bbconstruct.site/assets/brand/og-terrassement-egouttage.jpg?v=5423890c8a">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Logo BBconstruct, maçonnerie, rénovation et aménagements extérieurs, à côté d'une photo de chantier : grande terrasse en pavés béton vieillis au coucher du soleil, au fond d'un jardin. Villers-la-Ville et Sombreffe, 0471 41 01 84">
+  <meta property="og:image:alt" content="Logo BBconstruct, terrassement, égouttage, à côté d'une photo de chantier : chargeur compact portant une palette de dalles gazon devant un bâtiment industriel et une clôture. Villers-la-Ville et Sombreffe, 0471 41 01 84">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Terrassement et égouttage — BBconstruct, Villers-la-Ville et Sombreffe">
-  <meta name="twitter:description" content="Préparation du sol, béton et égouttage privatif autour d'une maison ou d'un bâtiment, par Benjamin Bricmant.">
-  <meta name="twitter:image" content="https://bbconstruct.site/assets/brand/og-image.jpg?v=dc2551ad9c">
-  <meta name="twitter:image:alt" content="Logo BBconstruct, maçonnerie, rénovation et aménagements extérieurs, à côté d'une photo de chantier : grande terrasse en pavés béton vieillis au coucher du soleil, au fond d'un jardin. Villers-la-Ville et Sombreffe, 0471 41 01 84">
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/brand/favicon-32.png?v=0cf79bb541">
-  <link rel="icon" type="image/png" sizes="192x192" href="../assets/brand/favicon-192.png?v=0cf79bb541">
-  <link rel="apple-touch-icon" href="../assets/brand/favicon-180.png?v=0cf79bb541">
+  <meta name="twitter:title" content="Terrassement & égouttage — BBconstruct, Villers-la-Ville et Sombreffe">
+  <meta name="twitter:description" content="Préparation du sol et égouttage privatif autour d'une maison ou d'un bâtiment, par Benjamin Bricmant.">
+  <meta name="twitter:image" content="https://www.bbconstruct.site/assets/brand/og-terrassement-egouttage.jpg?v=5423890c8a">
+  <meta name="twitter:image:alt" content="Logo BBconstruct, terrassement, égouttage, à côté d'une photo de chantier : chargeur compact portant une palette de dalles gazon devant un bâtiment industriel et une clôture. Villers-la-Ville et Sombreffe, 0471 41 01 84">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/brand/favicon-32.png?v=e99e50d790">
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/brand/favicon-192.png?v=e99e50d790">
+  <link rel="apple-touch-icon" href="../assets/brand/favicon-180.png?v=e99e50d790">
   <link rel="preload" href="../assets/fonts/manrope-latin-wght-normal.woff2?v=a30ddcd349" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../assets/css/style.4e869db6b6.css">
+  <link rel="preload" as="image" href="../assets/img/chargeur-dalles-gazon-band-phone-800.webp?v=1a90f5d9ba" imagesrcset="../assets/img/chargeur-dalles-gazon-band-phone-480.webp?v=1a90f5d9ba 480w, ../assets/img/chargeur-dalles-gazon-band-phone-800.webp?v=1a90f5d9ba 800w" imagesizes="calc((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px)))" media="(max-width: 700px)" fetchpriority="high">
+  <link rel="preload" as="image" href="../assets/img/chargeur-dalles-gazon-band-phone-1200.webp?v=1a90f5d9ba" imagesrcset="../assets/img/chargeur-dalles-gazon-band-phone-800.webp?v=1a90f5d9ba 800w, ../assets/img/chargeur-dalles-gazon-band-phone-1200.webp?v=1a90f5d9ba 1200w, ../assets/img/chargeur-dalles-gazon-band-phone-1600.webp?v=1a90f5d9ba 1600w" imagesizes="calc((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px)))" media="(min-width: 701px) and (max-width: 56.25em)" fetchpriority="high">
+  <link rel="preload" as="image" href="../assets/img/chargeur-dalles-gazon-band-800.webp?v=1a90f5d9ba" imagesrcset="../assets/img/chargeur-dalles-gazon-band-480.webp?v=1a90f5d9ba 480w, ../assets/img/chargeur-dalles-gazon-band-800.webp?v=1a90f5d9ba 800w, ../assets/img/chargeur-dalles-gazon-band-1200.webp?v=1a90f5d9ba 1200w" imagesizes="(min-width: 56.3125em) calc(((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px)) - clamp(28px, 4vw, 56px)) * .46 - 2px)" media="(min-width: 56.3125em)" fetchpriority="high">
+  <link rel="stylesheet" href="../assets/css/style.048529481e.css">
     <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Service",
-        "@id": "https://bbconstruct.site/terrassement-egouttage/#service",
-        "name": "Terrassement, béton et égouttage",
+        "@id": "https://www.bbconstruct.site/terrassement-egouttage/#service",
+        "name": "Terrassement et égouttage",
         "serviceType": "Terrassement & égouttage",
-        "description": "Sous une terrasse, une allée ou un parking, il y a d'abord le sol à préparer ; autour d'une maison ou d'un bâtiment, l'eau à évacuer. Benjamin Bricmant réalise ces travaux avant la pose, pour les particuliers comme pour les entreprises.",
-        "url": "https://bbconstruct.site/terrassement-egouttage/",
-        "provider": {"@type": "HomeAndConstructionBusiness", "@id": "https://bbconstruct.site/#entreprise", "name": "BBconstruct", "telephone": "+32471410184", "url": "https://bbconstruct.site/"},
+        "description": "Sous une terrasse, une allée ou un parking, il y a d'abord le sol à préparer ; autour d'une maison ou d'un bâtiment, l'eau à évacuer. Benjamin Bricmant, basé entre Villers-la-Ville et Sombreffe, réalise ces travaux avant la pose, pour les particuliers comme pour les entreprises.",
+        "url": "https://www.bbconstruct.site/terrassement-egouttage/",
+        "provider": {"@type": "HomeAndConstructionBusiness", "@id": "https://www.bbconstruct.site/#entreprise", "name": "BBconstruct", "telephone": "+32471410184", "url": "https://www.bbconstruct.site/"},
         "areaServed": [
           {"@type": "City", "name": "Villers-la-Ville", "containedInPlace": {"@type": "Country", "name": "Belgique", "sameAs": "https://www.wikidata.org/wiki/Q31"}},
           {"@type": "City", "name": "Sombreffe", "containedInPlace": {"@type": "Country", "name": "Belgique", "sameAs": "https://www.wikidata.org/wiki/Q31"}}
         ],
-        "image": ["https://bbconstruct.site/assets/img/egouttage-chambre-visite-1600.webp"]
+        "image": ["https://www.bbconstruct.site/assets/img/chargeur-dalles-gazon-1600.webp?v=330dca89b4", "https://www.bbconstruct.site/assets/img/dalles-gazon-parking-1600.webp?v=8af8be6e57", "https://www.bbconstruct.site/assets/img/egouttage-chambre-visite-1600.webp?v=7f958bbdc9"]
       },
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://bbconstruct.site/"},
-          {"@type": "ListItem", "position": 2, "name": "Terrassement & égouttage", "item": "https://bbconstruct.site/terrassement-egouttage/"}
+          {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.bbconstruct.site/"},
+          {"@type": "ListItem", "position": 2, "name": "Terrassement & égouttage", "item": "https://www.bbconstruct.site/terrassement-egouttage/"}
         ]
       }
     ]
   }
   </script>
 </head>
-<body>
+<body data-page="terrassement-egouttage">
   <a class="skip" href="#contenu">Aller au contenu</a>
 
   <header class="site-header">
     <div class="wrap header-in">
       <a class="brand" href="../" aria-label="BBconstruct, Benjamin Bricmant — accueil">
         <picture>
-          <source media="(max-width: 30em)" srcset="../assets/brand/logo-header-mobile.webp?v=0cf79bb541" width="503" height="80">
-          <img src="../assets/brand/logo-header.webp?v=0cf79bb541" srcset="../assets/brand/logo-header-1x.webp?v=0cf79bb541 1x, ../assets/brand/logo-header.webp?v=0cf79bb541 2x" width="654" height="104" alt="">
+          <source media="(max-width: 30em)" srcset="../assets/brand/logo-header-mobile.webp?v=e99e50d790" width="503" height="80">
+          <img src="../assets/brand/logo-header.webp?v=e99e50d790" srcset="../assets/brand/logo-header-1x.webp?v=e99e50d790 1x, ../assets/brand/logo-header.webp?v=e99e50d790 2x" width="654" height="104" alt="">
         </picture>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">
@@ -77,8 +80,8 @@
         <ul>
           <li><a href="../">Accueil</a></li>
           <li><a href="../#realisations">Réalisations</a></li>
-          <li class="has-sub"><a href="../#services">Services</a>
-            <ul class="sub">
+          <li class="has-sub"><a href="../#services">Services</a><button type="button" class="sub-toggle" aria-expanded="false" aria-controls="sub-services"><span class="sr">Pages des services</span><svg class="ico" aria-hidden="true"><use href="#i-chevron"/></svg></button>
+            <ul class="sub" id="sub-services">
               <li><a href="../amenagement-exterieur/">Aménagement extérieur</a></li>
               <li><a href="../maconnerie-renovation/">Maçonnerie &amp; rénovation</a></li>
               <li><a href="../terrassement-egouttage/" aria-current="page">Terrassement &amp; égouttage</a></li>
@@ -99,66 +102,82 @@
 
   <main id="contenu">
     <section class="page-hero" aria-labelledby="page-title">
-      <div class="wrap">
-        <nav class="crumbs" aria-label="Fil d'Ariane">
-          <ol>
-            <li><a href="../">Accueil</a></li>
-            <li><span aria-current="page">Terrassement &amp; égouttage</span></li>
-          </ol>
-        </nav>
-        <h1 id="page-title">Terrassement et égouttage à <span class="nw">Villers-la-Ville</span>, Sombreffe et environs</h1>
-        <p class="lead">Sous une terrasse, une allée ou un parking, il y a d'abord le sol à préparer ; autour d'une maison ou d'un bâtiment, l'eau à évacuer. Benjamin Bricmant réalise ces travaux avant la pose, pour les particuliers comme pour les entreprises.</p>
-        <div class="cta-row">
-          <a class="btn btn-orange" href="tel:+32471410184"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Appeler le 0471 41 01 84</a>
-          <a class="btn btn-ghost svc-quote" href="../?devis=terrassement#contact-form">Demander un devis<span class="sr"> : terrassement & égouttage</span></a>
-        </div>
+      <div class="wrap page-hero-in">
+        <div class="page-hero-text">
+          <nav class="crumbs" aria-label="Fil d'Ariane">
+            <ol>
+              <li><a href="../">Accueil</a></li>
+              <li><span aria-current="page">Terrassement &amp; égouttage</span></li>
+            </ol>
+          </nav>
+          <h1 id="page-title">Terrassement &amp; égouttage <span class="h1-where">à <span class="nw">Villers-la-Ville</span>, Sombreffe et environs</span></h1>
+          <p class="lead">Sous une terrasse, une allée ou un parking, il y a d'abord le sol à préparer ; autour d'une maison ou d'un bâtiment, l'eau à évacuer. Benjamin Bricmant, basé entre <span class="nw">Villers-la-Ville</span> et Sombreffe, réalise ces travaux avant la pose, pour les particuliers comme pour les entreprises.</p>
+          <div class="cta-row">
+            <a class="btn btn-orange" href="tel:+32471410184"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span class="btn-label">Appeler le <span class="tel-n">0471 41 01 84</span></span></a>
+            <a class="btn btn-ghost svc-quote" href="../?devis=terrassement&amp;depuis=terrassement-egouttage#contact-form">Demander un devis<span class="sr"> : terrassement & égouttage</span></a>
+          </div>          <p class="hero-pro"><svg class="ico" aria-hidden="true"><use href="#i-building"/></svg><span><strong><span class="pro-long">Vous êtes une entreprise ?</span><span class="pro-short">Entreprise ?</span></strong> <a class="hero-pro-form" href="../?devis=terrassement&amp;qui=pro&amp;depuis=terrassement-egouttage#contact-form">Décrivez votre besoin</a><span class="pro-box"> ·&nbsp;<a class="hero-pro-box" href="../#entreprises">facturation, assurance et références</a></span></span></p>
+          <p class="hero-reassure">Vous parlez directement à <a href="../#a-propos">Benjamin<span class="sr"> (qui il est, son parcours)</span></a>, 15 ans d'expérience : c'est lui qui vous répond, établit le devis et suit le chantier.</p>
+        </div>        <figure class="page-hero-photo" aria-labelledby="band-cap">
+          <picture>
+            <source media="(min-width: 56.3125em)" srcset="../assets/img/chargeur-dalles-gazon-band-480.webp?v=1a90f5d9ba 480w, ../assets/img/chargeur-dalles-gazon-band-800.webp?v=1a90f5d9ba 800w, ../assets/img/chargeur-dalles-gazon-band-1200.webp?v=1a90f5d9ba 1200w" sizes="(min-width: 56.3125em) calc(((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px)) - clamp(28px, 4vw, 56px)) * .46 - 2px)" width="800" height="600">
+            <source media="(min-width: 701px)" srcset="../assets/img/chargeur-dalles-gazon-band-phone-800.webp?v=1a90f5d9ba 800w, ../assets/img/chargeur-dalles-gazon-band-phone-1200.webp?v=1a90f5d9ba 1200w, ../assets/img/chargeur-dalles-gazon-band-phone-1600.webp?v=1a90f5d9ba 1600w" sizes="calc((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px)))" width="800" height="450">
+            <img src="../assets/img/chargeur-dalles-gazon-band-phone-800.webp?v=1a90f5d9ba" srcset="../assets/img/chargeur-dalles-gazon-band-phone-480.webp?v=1a90f5d9ba 480w, ../assets/img/chargeur-dalles-gazon-band-phone-800.webp?v=1a90f5d9ba 800w" sizes="calc((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px)))" width="800" height="450" fetchpriority="high" data-lcp elementtiming="opening-photo" alt="Chargeur articulé compact transportant une palette de dalles gazon sur le chantier">
+          </picture>
+          <figcaption><a href="#chantier-parking-dalles-gazon" aria-describedby="band-go"><span id="band-cap">Parking en dalles gazon, parc d&#x27;activités</span><span class="cap-go" aria-hidden="true">→</span></a><span id="band-go" hidden>voir ce chantier</span></figcaption>
+        </figure>
       </div>
     </section>
-
-    <section class="section section-alt section-compact" id="travaux" aria-labelledby="travaux-title">
+    <section class="section section-compact section-alt" id="travaux" aria-labelledby="travaux-title">
       <div class="wrap">
         <h2 id="travaux-title">Ce que Benjamin réalise en terrassement</h2>
         <ul class="svc-list">
                     <li>Déblais et creusement du coffre : la fouille sur toute la surface</li>
-          <li>Fondation en empierrement compactée, la couche de pierres qui porte le pavage</li>
+          <li>Fondation en empierrement compacté, la couche de pierres qui porte le pavage</li>
           <li>Lit de pose en sable, en sable stabilisé ou en mortier, selon le revêtement</li>
-          <li>Travaux de béton</li>
+                    <li>Travaux de béton</li>
                     <li>Égouttage privatif : tuyaux d'évacuation des eaux de pluie et usées, chambres de visite, caniveaux</li>
         </ul>
       </div>
     </section>
+
 
     <section class="section section-compact" id="chantiers" aria-labelledby="real-title">
       <div class="wrap">
         <header class="sec-head">
           <p class="eyebrow">Réalisations</p>
           <h2 id="real-title">Chantiers de terrassement et d'égouttage</h2>
-          <p class="sec-lead">Un chantier par vignette<span class="js-only"> : touchez-la pour voir toutes ses photos</span>. Tous les chantiers sont dans <a href="../#realisations">la galerie complète</a>.</p>
+          <p class="sec-lead">Un chantier par vignette<span class="js-only"> : cliquez ou touchez-la pour voir toutes ses photos ; quand elle en a plusieurs, faites-la aussi glisser pour les parcourir</span>. Tous les chantiers sont dans <a href="../#realisations">la galerie complète</a>.</p>
         </header>
         <p class="sr" id="gallery-status" aria-live="polite"></p>
-        <ul class="gallery" id="gallery">
-                <li class="g-item" data-cat="terrassement" data-id="parking-dalles-gazon" data-pro="1" data-quote-cat="exterieur">
-          <a class="g-link" href="../assets/img/dalles-gazon-parking-1600.webp?v=854ff31fc6" style="background-color: #7f928e; background-image: url(data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAQBACdASoQABUAPu1iqU2ppaOiMAgBMB2JZACdIIjCVDK3W+m4p9VpQADyihFHps7ABuSBD+GE0x/IBGt3RFii0iu6kiNnKOa9QZnekKEuUHjZC/WQQotbril+5aj4mKq+i5y+6C+U3FOTgAA=)" aria-label="Parking en dalles gazon, parc d&#x27;activités — 4 photos, agrandir">            <img src="../assets/img/dalles-gazon-parking-800.webp?v=854ff31fc6" srcset="../assets/img/dalles-gazon-parking-480.webp?v=854ff31fc6 480w, ../assets/img/dalles-gazon-parking-800.webp?v=854ff31fc6 800w" sizes="(max-width: 520px) calc(100vw - 32px), (max-width: 900px) calc(50vw - 23px), (max-width: 1180px) calc(33.3vw - 36px), 358px" width="800" height="1066" loading="lazy" decoding="async" alt="Bande de stationnement en dalles gazon béton le long d&#x27;une clôture dans un parc d&#x27;activités, camionnette BBconstruct au fond">
-            <span class="g-meta" aria-hidden="true"><span class="g-tag">Terrassement &amp; égouttage</span><span class="g-n">4 photos</span></span>
-            <span class="g-cap" aria-hidden="true">Parking en dalles gazon, parc d&#x27;activités</span>
+        <ul class="gallery gallery-page" id="gallery">
+                <li class="g-item" id="chantier-parking-dalles-gazon" data-cat="terrassement" data-id="parking-dalles-gazon" data-cut="0.0 0.2624 1.0 0.825" data-pro="1" data-quote-cat="exterieur">
+          <a class="g-link" href="../assets/img/dalles-gazon-parking-1600.webp?v=8af8be6e57" aria-labelledby="cap-parking-dalles-gazon capn-parking-dalles-gazon" aria-describedby="img-parking-dalles-gazon" style="background-color: #88958d; background-image: url(data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoQAAwAA4BaJYwC7AEe3pD8HqAA/plbwvp7lZHV4/gJkMv0xiYTZHaQWek9dIXzcaAAAA==)">
+            <span class="g-cap"><span id="cap-parking-dalles-gazon">Parking en dalles gazon, parc d&#x27;activités</span><span class="sr" id="capn-parking-dalles-gazon"> — 4 photos, agrandir</span></span>
+            <picture><source media="(min-width: 521px)" data-srcset="../assets/img/dalles-gazon-parking-cover-480.webp?v=98615f4933 480w, ../assets/img/dalles-gazon-parking-cover-800.webp?v=98615f4933 800w, ../assets/img/dalles-gazon-parking-cover-1200.webp?v=98615f4933 1200w" sizes="(max-width: 520px) calc((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px))), (max-width: 900px) calc(((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px)) - 14px) / 2), calc(((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px)) - 28px) / 3)"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../assets/img/dalles-gazon-parking-cover-800.webp?v=98615f4933" data-srcset="../assets/img/dalles-gazon-parking-cover-480.webp?v=98615f4933 480w, ../assets/img/dalles-gazon-parking-cover-800.webp?v=98615f4933 800w" sizes="(max-width: 520px) calc((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px))), (max-width: 900px) calc(((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px)) - 14px) / 2), calc(((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px)) - 28px) / 3)" width="800" height="600" loading="lazy" decoding="async" id="img-parking-dalles-gazon" alt="Bande de stationnement en dalles gazon béton le long d&#x27;une clôture dans un parc d&#x27;activités, camionnette BBconstruct au fond"></picture>
+            <noscript><img src="../assets/img/dalles-gazon-parking-cover-800.webp?v=98615f4933" srcset="../assets/img/dalles-gazon-parking-cover-480.webp?v=98615f4933 480w, ../assets/img/dalles-gazon-parking-cover-800.webp?v=98615f4933 800w" sizes="(max-width: 520px) calc((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px))), (max-width: 900px) calc(((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px)) - 14px) / 2), calc(((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px)) - 28px) / 3)" width="800" height="600" loading="lazy" decoding="async" alt="Bande de stationnement en dalles gazon béton le long d&#x27;une clôture dans un parc d&#x27;activités, camionnette BBconstruct au fond"></noscript>
+            <span class="g-meta" aria-hidden="true"><span class="g-n">4 photos</span></span>
           </a>
+          <p class="g-sum">Lit de pose tiré à la règle entre des profilés, puis pose de dalles gazon en béton le long d&#x27;un parc d&#x27;activités.</p>
           <ul class="g-set" hidden data-title="Parking en dalles gazon, parc d&#x27;activités" data-summary="Lit de pose tiré à la règle entre des profilés, puis pose de dalles gazon en béton le long d&#x27;un parc d&#x27;activités.">
-            <li data-src="../assets/img/dalles-gazon-parking-1200.webp?v=854ff31fc6" data-srcset="../assets/img/dalles-gazon-parking-800.webp?v=854ff31fc6 800w, ../assets/img/dalles-gazon-parking-1200.webp?v=854ff31fc6 1200w, ../assets/img/dalles-gazon-parking-1600.webp?v=854ff31fc6 1600w" data-w="1600" data-h="2133" data-alt="Bande de stationnement en dalles gazon béton le long d&#x27;une clôture dans un parc d&#x27;activités, camionnette BBconstruct au fond" data-cap="Dalles gazon posées"></li>
-            <li data-src="../assets/img/lit-de-pose-regle-1200.webp?v=1248b00493" data-srcset="../assets/img/lit-de-pose-regle-800.webp?v=1248b00493 800w, ../assets/img/lit-de-pose-regle-1200.webp?v=1248b00493 1200w, ../assets/img/lit-de-pose-regle-1600.webp?v=1248b00493 1600w" data-w="1600" data-h="1200" data-alt="Sable de pose tiré à la règle entre deux profilés de niveau, parking en préparation balisé de rubalise" data-cap="Lit de pose tiré à la règle"></li>
-            <li data-src="../assets/img/lit-de-pose-ras-1200.webp?v=280e73d034" data-srcset="../assets/img/lit-de-pose-ras-800.webp?v=280e73d034 800w, ../assets/img/lit-de-pose-ras-1200.webp?v=280e73d034 1200w, ../assets/img/lit-de-pose-ras-1600.webp?v=280e73d034 1600w" data-w="1600" data-h="2133" data-alt="Lit de pose réglé, vu au ras du sol, bordures de part et d&#x27;autre" data-cap="Lit de pose vu au ras du sol"></li>
-            <li data-src="../assets/img/chargeur-dalles-gazon-1200.webp?v=c6c198da81" data-srcset="../assets/img/chargeur-dalles-gazon-800.webp?v=c6c198da81 800w, ../assets/img/chargeur-dalles-gazon-1200.webp?v=c6c198da81 1200w, ../assets/img/chargeur-dalles-gazon-1600.webp?v=c6c198da81 1600w" data-w="1600" data-h="2133" data-alt="Chargeur articulé compact transportant une palette de dalles gazon sur le chantier" data-cap="Approvisionnement des dalles au chargeur"></li>
+            <li data-src="../assets/img/dalles-gazon-parking-1200.webp?v=8af8be6e57" data-srcset="../assets/img/dalles-gazon-parking-800.webp?v=8af8be6e57 800w, ../assets/img/dalles-gazon-parking-1200.webp?v=8af8be6e57 1200w, ../assets/img/dalles-gazon-parking-1600.webp?v=8af8be6e57 1600w" data-w="1600" data-h="2133" data-alt="Bande de stationnement en dalles gazon béton le long d&#x27;une clôture dans un parc d&#x27;activités, camionnette BBconstruct au fond" data-cap="Dalles gazon posées, alvéoles encore vides"></li>
+            <li data-src="../assets/img/lit-de-pose-regle-1200.webp?v=dcf6c90247" data-srcset="../assets/img/lit-de-pose-regle-800.webp?v=dcf6c90247 800w, ../assets/img/lit-de-pose-regle-1200.webp?v=dcf6c90247 1200w, ../assets/img/lit-de-pose-regle-1600.webp?v=dcf6c90247 1600w" data-w="1600" data-h="1200" data-alt="Sable de pose tiré à la règle entre deux profilés de niveau, parking en préparation balisé de rubalise" data-cap="Lit de pose tiré à la règle" data-card="../assets/img/lit-de-pose-regle-480.webp?v=dcf6c90247 480w, ../assets/img/lit-de-pose-regle-800.webp?v=dcf6c90247 800w" data-ph="data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAwAA4BaJQBOgB6s8JfPYADh+rk1H0vGEqE4txuVYJFKnNoAYS4V2/QRok/yebYVDgST5DaG2qfDHaPJCzhJuo89Ce9KAAA="></li>
+            <li data-src="../assets/img/lit-de-pose-ras-1200.webp?v=01996e0b72" data-srcset="../assets/img/lit-de-pose-ras-800.webp?v=01996e0b72 800w, ../assets/img/lit-de-pose-ras-1200.webp?v=01996e0b72 1200w, ../assets/img/lit-de-pose-ras-1600.webp?v=01996e0b72 1600w" data-w="1600" data-h="2133" data-alt="Lit de pose réglé, vu au ras du sol, bordures de part et d&#x27;autre" data-cap="Lit de pose vu au ras du sol" data-card="../assets/img/lit-de-pose-ras-cover-480.webp?v=15f7713dab 480w, ../assets/img/lit-de-pose-ras-cover-800.webp?v=15f7713dab 800w" data-card-cut="0.0 0.2187 1.0 0.7813" data-ph="data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAADQAQCdASoQAAwAA4BaJYwCdAEPdYcK4AD+yLzEt87kSfYq1q1HTqgA"></li>
+            <li data-src="../assets/img/chargeur-dalles-gazon-1200.webp?v=330dca89b4" data-srcset="../assets/img/chargeur-dalles-gazon-800.webp?v=330dca89b4 800w, ../assets/img/chargeur-dalles-gazon-1200.webp?v=330dca89b4 1200w, ../assets/img/chargeur-dalles-gazon-1600.webp?v=330dca89b4 1600w" data-w="1600" data-h="2133" data-alt="Chargeur articulé compact transportant une palette de dalles gazon sur le chantier" data-cap="Approvisionnement des dalles au chargeur" data-card="../assets/img/chargeur-dalles-gazon-cover-480.webp?v=ad44673af8 480w, ../assets/img/chargeur-dalles-gazon-cover-800.webp?v=ad44673af8 800w" data-card-cut="0.0 0.2188 1.0 0.7812" data-ph="data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAwAA4BaJbACdAEPSLaXGGQAAP7kRuWsQ3FlRkibgDPti8OlQ4AA12oQZ6czIneTb4v+p2uZcDkQs5E/G/3tGMwssKsJw2wBWSQA"></li>
           </ul>
         </li>
-        <li class="g-item" data-cat="terrassement" data-id="egouttage">
-          <a class="g-link" href="../assets/img/egouttage-chambre-visite-1600.webp?v=801b4edc7a" style="background-color: #927f6a; background-image: url(data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAADQAwCdASoQABQAPu1iqU2ppaOiMAgBMB2JZACdMoACj4ouUtmBRAAA/q2REbwrILtySr0v2HUda9cyNOIWdC5y4TkNvLhDSqpEBp9Aqr1weN6JsNk5kkwcVhQa4QcG226ShBC9geXMRa5MQLuSyO9fPZt/eAAA); background-position: 50% 80%" aria-label="Égouttage et chambre de visite maçonnée — 1 photo, agrandir">            <img src="../assets/img/egouttage-chambre-visite-800.webp?v=801b4edc7a" srcset="../assets/img/egouttage-chambre-visite-480.webp?v=801b4edc7a 480w, ../assets/img/egouttage-chambre-visite-800.webp?v=801b4edc7a 800w" sizes="(max-width: 520px) calc(100vw - 32px), (max-width: 900px) calc(50vw - 23px), (max-width: 1180px) calc(33.3vw - 36px), 358px" width="800" height="1006" loading="lazy" decoding="async" style="object-position: 50% 80%" alt="Descente d&#x27;eau de pluie raccordée à une conduite en PVC posée en tranchée, qui traverse une chambre de visite maçonnée en blocs où elle est ouverte sur un fond en mortier">
-            <span class="g-meta" aria-hidden="true"><span class="g-tag">Terrassement &amp; égouttage</span></span>
-            <span class="g-cap" aria-hidden="true">Égouttage et chambre de visite maçonnée</span>
+                <li class="g-item" id="chantier-egouttage" data-cat="terrassement" data-id="egouttage" data-cut="0.0 0.3227 1.0 0.9193">
+          <a class="g-link" href="../assets/img/egouttage-chambre-visite-1600.webp?v=7f958bbdc9" aria-labelledby="cap-egouttage capn-egouttage" aria-describedby="img-egouttage" style="background-color: #937c66; background-image: url(data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAwAA4BaJagCdADcZ+ye4yQAAPxyAYOsacxoNZSHLKImVGkHFIdDKhLhEucM3CnZK75x/WRs0LtwRvdhWMUfvsrPquA5sQg+PHF/guE3ywAA)">
+            <span class="g-cap"><span id="cap-egouttage">Égouttage et chambre de visite maçonnée</span><span class="sr" id="capn-egouttage"> — 1 photo, agrandir</span></span>
+            <picture><source media="(min-width: 521px)" data-srcset="../assets/img/egouttage-chambre-visite-cover-480.webp?v=d26be0f7f8 480w, ../assets/img/egouttage-chambre-visite-cover-800.webp?v=d26be0f7f8 800w, ../assets/img/egouttage-chambre-visite-cover-1200.webp?v=d26be0f7f8 1200w" sizes="(max-width: 520px) calc((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px))), (max-width: 900px) calc(((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px)) - 14px) / 2), calc(((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px)) - 28px) / 3)"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../assets/img/egouttage-chambre-visite-cover-800.webp?v=d26be0f7f8" data-srcset="../assets/img/egouttage-chambre-visite-cover-480.webp?v=d26be0f7f8 480w, ../assets/img/egouttage-chambre-visite-cover-800.webp?v=d26be0f7f8 800w" sizes="(max-width: 520px) calc((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px))), (max-width: 900px) calc(((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px)) - 14px) / 2), calc(((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px)) - 28px) / 3)" width="800" height="600" loading="lazy" decoding="async" id="img-egouttage" alt="Descente d&#x27;eau de pluie raccordée à une conduite en PVC posée en tranchée, qui traverse une chambre de visite maçonnée en blocs où elle est ouverte sur un fond en mortier"></picture>
+            <noscript><img src="../assets/img/egouttage-chambre-visite-cover-800.webp?v=d26be0f7f8" srcset="../assets/img/egouttage-chambre-visite-cover-480.webp?v=d26be0f7f8 480w, ../assets/img/egouttage-chambre-visite-cover-800.webp?v=d26be0f7f8 800w" sizes="(max-width: 520px) calc((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px))), (max-width: 900px) calc(((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px)) - 14px) / 2), calc(((min(100vw, 73.75rem) - 2 * clamp(16px, 4vw, 40px)) - 28px) / 3)" width="800" height="600" loading="lazy" decoding="async" alt="Descente d&#x27;eau de pluie raccordée à une conduite en PVC posée en tranchée, qui traverse une chambre de visite maçonnée en blocs où elle est ouverte sur un fond en mortier"></noscript>
+            <span class="g-meta" aria-hidden="true"></span>
           </a>
+          <p class="g-sum">Conduites d&#x27;évacuation en PVC posées en tranchée ; dans la chambre de visite maçonnée, la conduite est ouverte sur un fond en mortier pour l&#x27;entretien.</p>
           <ul class="g-set" hidden data-title="Égouttage et chambre de visite maçonnée" data-summary="Conduites d&#x27;évacuation en PVC posées en tranchée ; dans la chambre de visite maçonnée, la conduite est ouverte sur un fond en mortier pour l&#x27;entretien.">
-            <li data-src="../assets/img/egouttage-chambre-visite-1200.webp?v=801b4edc7a" data-srcset="../assets/img/egouttage-chambre-visite-800.webp?v=801b4edc7a 800w, ../assets/img/egouttage-chambre-visite-1200.webp?v=801b4edc7a 1200w, ../assets/img/egouttage-chambre-visite-1600.webp?v=801b4edc7a 1600w" data-w="1600" data-h="2011" data-alt="Descente d&#x27;eau de pluie raccordée à une conduite en PVC posée en tranchée, qui traverse une chambre de visite maçonnée en blocs où elle est ouverte sur un fond en mortier" data-cap="Conduite et chambre de visite maçonnée"></li>
+            <li data-src="../assets/img/egouttage-chambre-visite-1200.webp?v=7f958bbdc9" data-srcset="../assets/img/egouttage-chambre-visite-800.webp?v=7f958bbdc9 800w, ../assets/img/egouttage-chambre-visite-1200.webp?v=7f958bbdc9 1200w, ../assets/img/egouttage-chambre-visite-1600.webp?v=7f958bbdc9 1600w" data-w="1600" data-h="2011" data-alt="Descente d&#x27;eau de pluie raccordée à une conduite en PVC posée en tranchée, qui traverse une chambre de visite maçonnée en blocs où elle est ouverte sur un fond en mortier" data-cap="Conduite et chambre de visite maçonnée"></li>
           </ul>
         </li>
-                </ul>
+        </ul>
         <div class="more-row" hidden>
           <button type="button" class="btn btn-ghost" id="more">Afficher plus de chantiers</button>
         </div>
@@ -168,7 +187,8 @@
     <section class="section section-compact section-alt" id="deroulement" aria-labelledby="steps-title">
       <div class="wrap svc-steps">
         <h2 id="steps-title">Comment ça se passe</h2>
-        <p>Vous appelez ou écrivez, idéalement avec des photos. Si nécessaire, Benjamin vient voir sur place, puis vous recevez un devis détaillé et vous fixez une date ensemble.</p>
+                <p>Vous appelez ou écrivez, idéalement avec des photos. Si nécessaire, Benjamin vient voir sur place, puis vous recevez un devis détaillé <mark class="todo">[gratuit ? délai d'envoi ? ordre de prix ? TVA à 6 % ?]</mark> et vous fixez une date ensemble.</p>
+                <p class="svc-area"><strong>Zone d'intervention :</strong> <span class="nw">Villers-la-Ville</span>, Sombreffe et environs <mark class="todo">[communes ou rayon en km]</mark></p>
         <p class="svc-steps-link"><a href="../#etapes">Les quatre étapes en détail</a></p>
       </div>
     </section>
@@ -177,19 +197,19 @@
       <div class="wrap svc-contact">
         <div class="contact-info">
           <h2 id="contact-title">Un projet ? Parlons-en.</h2>
-          <p class="contact-lead">Le plus simple : appelez Benjamin, ou envoyez-lui quelques photos de l'endroit. Demander un devis ne vous engage à rien.</p>
+                    <p class="contact-lead">Le plus simple : appelez Benjamin, ou envoyez-lui quelques photos de l'endroit. Demander un devis ne vous engage à rien.</p>
           <div class="contact-actions">
-            <a class="btn btn-orange btn-lg" href="tel:+32471410184"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Appeler le 0471 41 01 84</a>
-            <a class="btn btn-ghost btn-lg" href="https://wa.me/32471410184?text=Bonjour%20Benjamin%2C%20je%20vous%20contacte%20depuis%20votre%20site%20pour%20un%20projet%20%3A%20" rel="noopener" target="_blank"><svg class="ico" aria-hidden="true"><use href="#i-whatsapp"/></svg>Photos par WhatsApp<span class="sr"> (nouvel onglet)</span></a>
-            <a class="btn btn-ghost btn-lg svc-quote" href="../?devis=terrassement#contact-form"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg>Remplir la demande de devis</a>
+            <a class="btn btn-orange btn-lg" href="tel:+32471410184"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span class="btn-label">Appeler le <span class="tel-n">0471 41 01 84</span></span></a>
+            <a class="btn btn-ghost btn-lg" href="https://wa.me/32471410184?text=Bonjour%20Benjamin%2C%20je%20vous%20contacte%20depuis%20votre%20site%20pour%20un%20projet%20de%20terrassement%20ou%20d%27%C3%A9gouttage%20%3A%20" rel="noopener" target="_blank"><svg class="ico" aria-hidden="true"><use href="#i-whatsapp"/></svg>Photos par WhatsApp<span class="sr"> (nouvel onglet)</span></a>
+            <a class="btn btn-ghost btn-lg svc-quote" href="../?devis=terrassement&amp;depuis=terrassement-egouttage#contact-form"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg>Remplir la demande de devis</a>
           </div>
           <ul class="contact-list">
             <li><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg><span class="cl-text"><a href="mailto:bbconstruct@outlook.be">bbconstruct@outlook.be</a></span></li>
-          </ul>
+          </ul>          <p class="svc-pro"><svg class="ico" aria-hidden="true"><use href="#i-building"/></svg><span><strong>Vous êtes une entreprise ?</strong> <a class="svc-pro-form" href="../?devis=terrassement&amp;qui=pro&amp;depuis=terrassement-egouttage#contact-form">Décrivez votre besoin</a> ·&nbsp;<a href="../#entreprises">facturation, assurance et références</a></span></p>
         </div>
         <div class="svc-permit">
-          <h3 class="permit-title" id="bon-a-savoir">Extension, mur porteur ou égout : bon à savoir</h3>
-                    <p class="permit-note">Le raccordement à l'égout public demande l'accord de la commune ; un gros remblai ou déblai, parfois un permis. Avant de creuser, les plans des câbles et conduites doivent être consultés. <mark class="todo">[Benjamin vous dit lors de sa visite ce qu'il faut prévoir]</mark></p>
+          <h3 class="permit-title" id="bon-a-savoir">Égout, remblai et câbles : bon à savoir</h3>
+                    <p class="permit-note">Le raccordement à l'égout public demande l'accord de la commune ; un gros remblai ou déblai, parfois un permis. Avant de creuser, on demande les plans des câbles et conduites : c'est une demande CICC (KLIM-CICC), que fait normalement l'entrepreneur. <mark class="todo">[Benjamin vous dit lors de sa visite ce qu'il faut prévoir]</mark></p>
         </div>
       </div>
     </section>
@@ -201,7 +221,7 @@
           <li class="card">
             <svg class="ico ico-lg" aria-hidden="true"><use href="#i-paving"/></svg>
             <h3><a class="svc-other" href="../amenagement-exterieur/">Aménagement extérieur</a></h3>
-            <p>Terrasses, allées, escaliers, dalles gazon et bassins.</p>
+            <p>Terrasses en céramique, en grès ou en pavés, allées, escaliers, dalles gazon et bassins.</p>
           </li>
           <li class="card">
             <svg class="ico ico-lg" aria-hidden="true"><use href="#i-wall"/></svg>
@@ -216,8 +236,8 @@
   <footer class="site-footer">
     <div class="wrap footer-in">
       <picture>
-        <source media="(max-width: 30em)" srcset="../assets/brand/logo-header-mobile.webp?v=0cf79bb541" width="503" height="80">
-        <img src="../assets/brand/logo-header.webp?v=0cf79bb541" srcset="../assets/brand/logo-header-1x.webp?v=0cf79bb541 1x, ../assets/brand/logo-header.webp?v=0cf79bb541 2x" width="654" height="104" alt="BBconstruct, Benjamin Bricmant" class="footer-logo" loading="lazy">
+        <source media="(max-width: 30em)" srcset="../assets/brand/logo-header-mobile.webp?v=e99e50d790" width="503" height="80">
+        <img src="../assets/brand/logo-header.webp?v=e99e50d790" srcset="../assets/brand/logo-header-1x.webp?v=e99e50d790 1x, ../assets/brand/logo-header.webp?v=e99e50d790 2x" width="654" height="104" alt="BBconstruct, Benjamin Bricmant" class="footer-logo" loading="lazy">
       </picture>
       <p>Maçonnerie · Rénovation · Transformation · Terrassement · Égouttage · Aménagements extérieurs</p>
       <p class="footer-contact"><a href="tel:+32471410184">0471 41 01 84</a> <span aria-hidden="true">·</span> <a href="mailto:bbconstruct@outlook.be">bbconstruct@outlook.be</a></p>
@@ -234,19 +254,17 @@
   </a>
 
   <dialog class="lightbox" id="lightbox" aria-labelledby="lb-title" aria-describedby="lb-count lb-sum lb-cap">
-    <div class="lb-top">
-      <div class="lb-head" role="group" aria-labelledby="lb-title"><p class="lb-title" id="lb-title"></p><p class="lb-sum" id="lb-sum"></p></div>
+    <div class="lb-top">      <div class="lb-head"><p class="lb-title" id="lb-title"></p><p class="lb-sum" id="lb-sum"></p></div>
       <p class="lb-count" id="lb-count"></p>
       <button type="button" class="lb-btn lb-close" id="lb-close" aria-label="Fermer">×</button>
     </div>
-    <div class="lb-stage">
-      <img id="lb-img" alt="">      <img id="lb-pre" alt="" hidden>
+    <div class="lb-stage">      <img id="lb-img" alt="" fetchpriority="high">      <img id="lb-pre" alt="" hidden>
     </div>
     <div class="lb-bottom">
       <button type="button" class="lb-btn lb-prev" id="lb-prev" aria-label="Photo précédente">‹</button>
       <div class="lb-text">
         <p class="lb-cap" id="lb-cap"></p>
-        <a class="lb-cta btn btn-sm btn-orange" id="lb-cta" href="../?devis=terrassement#contact-form">Demander un devis<span class="cta-long"> pour ce type de travaux</span></a>
+        <a class="lb-cta btn btn-sm btn-orange" id="lb-cta" href="../?devis=terrassement&amp;depuis=terrassement-egouttage#contact-form">Demander un devis<span class="cta-long"> pour ce type de travaux</span></a>
       </div>
       <button type="button" class="lb-btn lb-next" id="lb-next" aria-label="Photo suivante">›</button>
     </div>
@@ -259,6 +277,7 @@
     <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m8.5 12 2.4 2.4L15.5 9.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5 9 3l1.6 4-2 1.3a11 11 0 0 0 7.1 7.1l1.3-2 4 1.6-.5 2.4a2 2 0 0 1-2 1.6A16.5 16.5 0 0 1 3 5.5a2 2 0 0 1 1.6-2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
     <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m3.5 6 8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
     <symbol id="i-trowel" viewBox="0 0 24 24"><path d="M3 21l7.5-7.5M10.5 13.5 9 12l1-1 9.5-7.5c.6-.4 1.3.3.9.9L13 14l-1 1Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></symbol>
     <symbol id="i-digger" viewBox="0 0 24 24"><path d="M2 18.5h11M3.5 15.5h9v3h-9zM5 15.5V10h4l2 5.5M11 12l5-6 4 3-1.5 4.5M18.5 13.5l-2.5.5 1 2.5 3-1z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></symbol>
