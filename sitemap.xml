@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://bbconstruct.site/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <image:image><image:loc>https://bbconstruct.site/assets/img/bassin-jardin-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://bbconstruct.site/assets/img/cheminee-pierre-bleue-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://bbconstruct.site/assets/img/patio-rond-gres-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://bbconstruct.site/assets/img/egouttage-chambre-visite-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://bbconstruct.site/assets/img/terrasse-paves-vieillis-coucher-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://bbconstruct.site/assets/img/terrasse-dalles-grises-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://bbconstruct.site/assets/img/mur-jardin-briques-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://bbconstruct.site/assets/img/annexe-blocs-toiture-1600.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://bbconstruct.site/amenagement-exterieur/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <image:image><image:loc>https://bbconstruct.site/assets/img/bassin-jardin-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://bbconstruct.site/assets/img/patio-rond-gres-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://bbconstruct.site/assets/img/terrasse-paves-vieillis-coucher-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://bbconstruct.site/assets/img/terrasse-dalles-grises-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://bbconstruct.site/assets/img/cour-paves-beton-mur-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://bbconstruct.site/assets/img/dalles-beton-terrasse-1600.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://bbconstruct.site/maconnerie-renovation/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <image:image><image:loc>https://bbconstruct.site/assets/img/cheminee-pierre-bleue-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://bbconstruct.site/assets/img/mur-jardin-briques-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://bbconstruct.site/assets/img/annexe-blocs-toiture-1600.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://bbconstruct.site/terrassement-egouttage/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <image:image><image:loc>https://bbconstruct.site/assets/img/egouttage-chambre-visite-1600.webp</image:loc></image:image>
+  </url>
+</urlset>
