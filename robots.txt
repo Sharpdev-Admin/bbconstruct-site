@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.bbconstruct.site/sitemap.xml
+Sitemap: https://sharpdev-admin.github.io/bbconstruct-site/sitemap.xml
