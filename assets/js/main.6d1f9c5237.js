@@ -385,6 +385,46 @@
       strips.set(item, { strip: link, slides, shown, go });
     });
   }
+  const svc = $(".cards-swipe");
+  if (svc && svc.children.length > 1) {
+    const cards = Array.from(svc.children), dots = document.createElement("div");
+    dots.className = "cards-dots";
+    dots.setAttribute("aria-hidden", "true");
+    cards.forEach(() => dots.append(document.createElement("i")));
+    svc.after(dots);
+    const scrolls = () => svc.scrollWidth > svc.clientWidth + 1;
+    let on = -1, raf = 0;
+    const mark = () => {
+      raf = 0;
+      const line = svc.getBoundingClientRect().left + (parseFloat(getComputedStyle(svc).scrollPaddingLeft) || 0);
+      let k = 0;
+      if (svc.scrollLeft >= svc.scrollWidth - svc.clientWidth - 1 && scrolls()) k = cards.length - 1;
+      else cards.forEach((c, i) => { if (Math.abs(c.getBoundingClientRect().left - line) < Math.abs(cards[k].getBoundingClientRect().left - line)) k = i; });
+      if (k === on) return;
+      if (on >= 0) dots.children[on].classList.remove("is-on");
+      dots.children[k].classList.add("is-on");
+      on = k;
+    };
+    mark();
+    svc.addEventListener("scroll", () => { if (!raf) raf = requestAnimationFrame(mark); }, { passive: true });
+    window.addEventListener("resize", () => { if (!raf) raf = requestAnimationFrame(mark); }, { passive: true });
+    const atEnd = (dx) => scrolls() && ((dx > 0 && svc.scrollLeft <= 0) || (dx < 0 && svc.scrollLeft >= svc.scrollWidth - svc.clientWidth - 1));
+    let t0 = null;
+    svc.addEventListener("touchstart", (e) => { t0 = e.touches.length === 1 ? { x: e.touches[0].clientX, y: e.touches[0].clientY } : null; }, { passive: true });
+    const onMove = (e) => {
+      if (!t0 || !e.cancelable) return;
+      const dx = e.touches[0].clientX - t0.x, dy = e.touches[0].clientY - t0.y;
+      if (Math.abs(dx) > Math.abs(dy) && atEnd(dx)) e.preventDefault();
+    };
+    const onWheel = (e) => { if (Math.abs(e.deltaX) > Math.abs(e.deltaY) && atEnd(-e.deltaX)) e.preventDefault(); };
+    const arm = (m) => { const f = m.matches ? "addEventListener" : "removeEventListener"; svc[f]("touchmove", onMove, { passive: false }); svc[f]("wheel", onWheel, { passive: false }); };
+    arm(onMedia("screen and (max-width: 640px)", arm));
+    svc.addEventListener("focusin", (e) => {
+      const card = e.target.closest(".card");
+      let kb = true; try { kb = e.target.matches(":focus-visible"); } catch { /* Safari before 15.4 has no :focus-visible */ }
+      if (card && scrolls() && kb) card.scrollIntoView({ block: "nearest", inline: "start", behavior: "instant" });
+    });
+  }
   const syncFilterFromUrl = () => {
     if (!items.length) return;
     const cat = new URL(location.href).searchParams.get("cat") || "all";

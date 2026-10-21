@@ -325,6 +325,24 @@ html:not(.js) .sub-toggle { display: none; }
   .card h3 { margin: 0; font-size: 1.12rem; }
   .card p { font-size: .98rem; margin-bottom: 2px; }
 }
+.cards-dots { display: none; }
+@media screen and (max-width: 640px) {
+  .cards-swipe {
+    display: flex; gap: 12px; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; overscroll-behavior-x: contain;
+    margin-inline: calc(-1 * var(--gutter)); padding: 4px var(--gutter); scroll-padding-inline: var(--gutter);
+  }
+  .cards-swipe > .card { flex: 0 0 85%; scroll-snap-align: start; grid-template-columns: 32px 1fr; grid-template-rows: auto 1fr auto; align-items: center; }
+  .cards-swipe .card .ico-lg { grid-row: auto; }
+  .cards-swipe .card p, .cards-swipe .card-actions { grid-column: 1 / -1; align-self: start; }
+  .cards-swipe .card p { margin-top: 6px; }
+  .cards-dots { display: flex; justify-content: center; gap: 8px; margin-top: 14px; }
+  .cards-dots i { width: 8px; height: 8px; border-radius: 50%; background: var(--c-line); transition: background-color .2s; }
+  .cards-dots i.is-on { background: var(--c-orange-hi); }
+}
+@media screen and (max-width: 640px) and (pointer: coarse) {
+  .cards-swipe { scrollbar-width: none; }
+  .cards-swipe::-webkit-scrollbar { display: none; }
+}
 .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
 .chip {
   min-height: 44px; padding: 8px 16px; border-radius: 999px; border: 1px solid #5a5e69;
@@ -786,6 +804,8 @@ h1, h2, h3 { overflow-wrap: break-word; hyphens: auto; }
   .g-n, .g-tag, .ba-tag, .g-arrow { forced-color-adjust: auto; border: 1px solid CanvasText; }
   .g-dots i { forced-color-adjust: none; background: Canvas; border: 1px solid CanvasText; }
   .g-dots i.is-on { background: Highlight; }
+  .cards-dots i { forced-color-adjust: none; background: Canvas; border: 1px solid CanvasText; }
+  .cards-dots i.is-on { background: Highlight; }
   mark.todo { border: 1px dashed CanvasText; }
   .bars, .bars::before, .bars::after { forced-color-adjust: none; background: ButtonText; }
   .nav-toggle[aria-expanded="true"] .bars { background: transparent; }
