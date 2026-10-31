@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>document.documentElement.classList.add("js");(function(){var d=document,q=[],out=[],held=0,io,each=function(s,f){[].forEach.call(d.querySelectorAll(s),f);},rel=function(i){if(!i.dataset.src)return;var p=i.parentNode;i.__bb={b:i.getAttribute("src"),s:i.dataset.src,ss:i.dataset.srcset};if(p&&p.tagName==="PICTURE")[].forEach.call(p.querySelectorAll("source[data-srcset]"),function(s){s.__ss=s.dataset.srcset;s.srcset=s.dataset.srcset;s.removeAttribute("data-srcset");});if(i.dataset.srcset)i.srcset=i.dataset.srcset;i.src=i.dataset.src;i.removeAttribute("data-srcset");i.removeAttribute("data-src");out.push(i);},back=function(i){var r=i.__bb,p=i.parentNode;if(p&&p.tagName==="PICTURE")[].forEach.call(p.querySelectorAll("source"),function(s){if(s.__ss){s.removeAttribute("srcset");s.dataset.srcset=s.__ss;}});i.removeAttribute("srcset");if(r.ss)i.dataset.srcset=r.ss;i.dataset.src=r.s;i.src=r.b;q.push(i);},all=function(){go.done=1;if(io)io.disconnect();q.splice(0).forEach(rel);each("img[data-src]",rel);},go=function(){if(go.done)return;go.done=1;if(!window.IntersectionObserver)return all();var c=navigator.connection,m=c&&c.saveData?0:innerWidth<=700?600:1250;io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;io.unobserve(e.target);if(held)q.push(e.target);else rel(e.target);});},{rootMargin:m+"px 0px"});each("img[data-src]",function(i){io.observe(i);});};window.BB_RELEASE=all;window.BB_HOLD=function(on,keep){held=on;if(!on)return q.splice(0).forEach(rel);out.splice(0).forEach(function(i){if(i!==keep&&!i.complete)back(i);else out.push(i);});};addEventListener("beforeprint",all);addEventListener("load",go);d.addEventListener("DOMContentLoaded",function(){var p=d.querySelector("img[data-lcp]");if(!p||p.complete)return go();p.addEventListener("load",go);p.addEventListener("error",go);});})();document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".nav-toggle");if(!b||window.BB_READY)return;var n=document.getElementById("nav"),o=b.getAttribute("aria-expanded")!=="true";b.setAttribute("aria-expanded",String(o));n.classList.toggle("is-open",o);});document.addEventListener("keydown",function(e){if(e.key!=="Escape"||window.BB_READY)return;var b=document.querySelector(".nav-toggle"),n=document.getElementById("nav");if(n&&n.classList.contains("is-open")){n.classList.remove("is-open");b.setAttribute("aria-expanded","false");b.focus();}});document.addEventListener("DOMContentLoaded",function(){if(!window.BB_READY){document.documentElement.classList.remove("js");window.BB_RELEASE();}});</script>
-  <script src="assets/js/main.6d1f9c5237.js" defer onerror="document.documentElement.classList.remove('js');window.BB_RELEASE()"></script>
+  <script src="assets/js/main.d2995ec347.js" defer onerror="document.documentElement.classList.remove('js');window.BB_RELEASE()"></script>
   <title>Maçon à Villers-la-Ville et Sombreffe | BBconstruct</title>
   <meta name="description" content="Maçon à Villers-la-Ville et Sombreffe, 15 ans d'expérience : terrasses, allées, extensions, rénovation, égouttage. Appelez Benjamin : 0471 41 01 84.">
   <link rel="canonical" href="https://sharpdev-admin.github.io/bbconstruct-site/">
@@ -649,7 +649,7 @@
           <p class="steps-more"><a href="#bon-a-savoir">Extension, mur porteur ou égout ? Lisez « bon à savoir »</a></p>
         </div>
 
-        <form class="form" id="contact-form" action="mailto:bbconstruct@outlook.be?cc=nathan.lahy%40sharpdev.be&amp;subject=Demande%20de%20devis" method="post" enctype="text/plain">
+        <form class="form" id="contact-form" action="mailto:bbconstruct@outlook.be?subject=Demande%20de%20devis" method="post" enctype="text/plain">
           <h3 class="form-title">Votre demande de devis</h3>          <p class="form-preset" id="form-preset" role="status"></p>
                     <p class="form-intro">Sans engagement. Ce formulaire prépare un e‑mail dans votre messagerie : vous le relisez, ajoutez vos photos et l'envoyez vous-même ; Benjamin vous répond à l'adresse depuis laquelle vous l'envoyez. Rien n'est enregistré par ce site (<a href="mentions-legales/#donnees">vos données</a>).</p>
           <fieldset class="field">
@@ -703,8 +703,7 @@
           </div>
           <p class="req-note"><span class="req" aria-hidden="true">*</span> champs obligatoires</p>
           <noscript><p class="form-fallback">Sans JavaScript, certains navigateurs abîment les accents du message préparé : vous pouvez aussi écrire directement à <a href="mailto:bbconstruct@outlook.be?subject=Demande%20de%20devis">bbconstruct@outlook.be</a>.</p></noscript>
-                    <p class="form-test" id="form-test">Phase de test du site : l'e‑mail préparé indique aussi en copie (Cc) la personne qui réalise le site (nathan.lahy@sharpdev.be).</p>
-          <button class="btn btn-orange btn-block" type="submit" aria-describedby="form-test">Préparer ma demande de devis</button>
+          <button class="btn btn-orange btn-block" type="submit">Préparer ma demande de devis</button>
           <p class="form-fallback">Pas de messagerie sur cet appareil ? Écrivez à <strong>bbconstruct@outlook.be</strong> depuis votre webmail, ou appelez le <a href="tel:+32471410184">0471 41 01 84</a>.</p>
           <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
         </form>

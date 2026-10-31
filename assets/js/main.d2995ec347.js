@@ -19,7 +19,7 @@
   const PHONE_HREF = "tel:" + "+32471410184";
   const PHONE_TEXT = "0471 41 01 84";
   const SITE = "www.bbconstruct.site";
-  const CC = "nathan.lahy@sharpdev.be"; // testing phase only (business.test_cc): the team gets a copy of every prepared e-mail
+  const CC = ""; // testing phase only (business.test_cc): the team gets a copy of every prepared e-mail
   const GREETING = "Bonjour Benjamin,"; // « Bonjour <founder's first name>, » (business.founder)
   const PAGES = {"amenagement-exterieur": "Aménagement extérieur", "maconnerie-renovation": "Maçonnerie & rénovation", "terrassement-egouttage": "Terrassement & égouttage"}; // service page slug -> its name, so a request says which page it started from (?depuis=)
   const pageFrom = () => { const k = new URL(location.href).searchParams.get("depuis"); return k && Object.prototype.hasOwnProperty.call(PAGES, k) ? PAGES[k] : ""; };
